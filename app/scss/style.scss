@@ -1,20 +1,19 @@
-body{
-    box-sizing: border-box;
-    background-color: lawngreen;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+.header__top-inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 90px;
 }
-*, *::before, *::after{
-    box-sizing: inherit;
+.header__top-text{
+    margin-left: auto;
+    padding-right: 25px;
 }
-.box{
-    font-size:12px;
-}
-.box__item{
-    width: 100px;
-    .box__item-link{
-        text-decoration: none;
-    }
-    
-}
-.text{
-    transform: rotate(30deg);
+
+.header__logo-link img{
+    width: 154px;
 }

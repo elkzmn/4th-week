@@ -1,0 +1,24 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto-Regular', sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
