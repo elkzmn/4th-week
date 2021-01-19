@@ -11,9 +11,48 @@ height: 90px;
 }
 .header__top-text{
     margin-left: auto;
-    padding-right: 25px;
+    padding-right: 50px;
+    span{
+        color: $red;
+    }
 }
-
-.header__logo-link img{
+.header__logo-link{
+    img{
     width: 154px;
+}
+}
+.header-btn{
+    padding: 4px;
+    border-radius: 4px;
+    width: 72px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+}
+.header-btn--login{
+    background-color: $green;
+}
+.header-btn--register{
+    background-color: red;
+    margin-left: 7px;
+}
+.header__menu{
+    background-color: $bg;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu__list{
+    .menu__list-item{
+        display: inline-block;
+        .menu__list-link{
+            color: #FFF;
+            font-weight: 500;
+        }
+    }
+    .menu__list-item + .menu__list-item{
+        margin-left: 30px;
+    }
 }
