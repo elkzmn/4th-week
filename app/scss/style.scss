@@ -2,7 +2,7 @@
 @import 'global';
 @import 'fonts';
 
-
+//start header
 .header__top-inner{
 display: flex;
 justify-content: space-between;
@@ -56,7 +56,9 @@ height: 90px;
         margin-left: 30px;
     }
 }
+//end header
 
+//start search
 .search{
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,4 +113,111 @@ height: 90px;
         }
     }
 }
+//end search
 
+//start products
+
+.product{
+    padding: 110px 0;
+    background-color: $grey;
+}
+.product__inner-btn{
+    text-align: center;
+    margin-bottom: 60px;
+    button{
+        padding: 12px 21px;
+        border: none;
+        background-color: #FFF;
+        color: $bg;
+        cursor: pointer;
+        & + button{
+            margin-left: 5px;
+        }
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #FFF;
+            outline: none;
+        }
+    }
+}
+.product__inner-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 47px;
+}
+.product__item{
+    max-width: 442px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 30px;
+
+    &-img{
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        background-size: cover;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e7ecf2;
+        padding: 10px 30px;
+        align-items: center;  
+        min-height: 90px;
+        font-weight: 500;
+    }
+    &-name{
+        max-width: 301px;
+    }
+    &-title{
+        color: $bg;
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+    }
+    &-category{
+        display: block;
+        font-size: 14px;
+        color: $green;
+    }
+    &-price{
+        font-size: 20px;
+        color: $bg;
+        font-weight: 700;
+    }
+    &-info{
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+    }
+    &-user{
+        font-size: 14px;
+        span{
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           background-position: center center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           display: inline-block;
+           margin-right: 13px;
+           vertical-align: middle;
+        }
+    }
+}
+.products__bottom-btn{
+    text-align: center;
+    button{
+        padding: 18px 37px 18px 32px;
+        background-color: #FFF;
+        box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+        color:$bg;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
