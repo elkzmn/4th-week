@@ -49,7 +49,7 @@ height: 90px;
         display: inline-block;
         .menu__list-link{
             color: #FFF;
-            font-weight: 500;
+            @include f500;
         }
     }
     .menu__list-item + .menu__list-item{
@@ -72,13 +72,13 @@ height: 90px;
     &-title{
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         line-height: 70px;
     }
     &-text{
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
     }
     &-form{
@@ -96,7 +96,7 @@ height: 90px;
             font-size: 14px;
             &::placeholder{
                 color: #90a4ae;
-                font-weight: 500;
+                @include f500;
             }
         }
         button{
@@ -166,7 +166,7 @@ height: 90px;
         padding: 10px 30px;
         align-items: center;  
         min-height: 90px;
-        font-weight: 500;
+        @include f500;
     }
     &-name{
         max-width: 301px;
@@ -174,7 +174,7 @@ height: 90px;
     &-title{
         color: $bg;
         font-size: 18px;
-        font-weight: 500;
+        @include f500;
         display: block;
     }
     &-category{
@@ -221,3 +221,62 @@ height: 90px;
         cursor: pointer;
     }
 }
+
+//Section product END
+
+//Start ADVANTAGES
+.advantages{
+    background-color: $bg;
+    padding: 100px 0;
+}
+.advantages__title{
+    color:#FFF;
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 380px;
+    align-items: center;
+}
+.advantages__item{
+    max-width: 370px;
+    text-align: center;
+    padding: 0 10px;
+    &:hover{
+        .advantages__item-image{
+            background-color: $green;
+            transition: all .3s;
+            g{
+                fill:#FFF;
+            }
+        }
+        .advantages__item-title{
+            color: $green;
+            transition: all .3s;
+        }
+    }
+    &-image{
+        width: 114px;
+        height: 114px;
+        background-color: #FFF;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    &-title{
+        color: #FFF;
+        margin-bottom: 25px;
+        @include f500;
+        font-size: 24px;
+    }
+    &-text{
+    font-size: 15px;
+    }
+}
+
+
+
+//End ADVANTAGES

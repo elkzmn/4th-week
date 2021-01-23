@@ -39,7 +39,7 @@ li{
 }
 .title{
     color: $bg;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     align-items: 60px;
     text-align: center;
