@@ -4,3 +4,12 @@
         url("../fonts/Roboto-Regular.woff") format("woff");
     font-weight: 400;
 }
+.icon-reply:before {
+    content: "\e96a";
+}
+.icon-mail2:before {
+    content: "\ea84";
+}
+.icon-bell:before {
+    content: "\e951";
+}
