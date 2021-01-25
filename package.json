@@ -9,6 +9,7 @@
   "author": "Lena K",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "auto-prefixer": "^0.4.2",
     "browser-sync": "^2.26.13",
     "cssmin": "^0.4.3",

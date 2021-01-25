@@ -41,14 +41,14 @@ height: 90px;
     background-color: red;
     margin-left: 7px;
 }
-.header-btn--login-off{
-    display: none;
-}
+// .header-btn--login-off{
+//     display: none;
+// }
 .header-btn--logout{
     display: none;
-    &.header-btn--login-on{
-        display: block;
-    }
+    // &.header-btn--login-on{
+    //     display: block;
+    // }
 }
 .header__menu{
     background-color: $bg;
@@ -362,6 +362,109 @@ background-image: url("../img/bell.svg");
     margin-left: 6px;
 }
 //end header
+
+//start modal
+#modal{
+    background-color: $green;
+    width: 730px;
+    padding: 90px 10px 100px;
+}
+.modal__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #FFF;
+    @include f700;
+}
+.modal__form{
+        max-width: 400px;
+        margin: 0 auto;
+    label{
+        position: relative;
+    }
+    input{
+        width: 100%;
+        height: 43px;
+        margin-bottom: 8px;
+        color: #FFF;
+        font-size: 14px;
+        border: none;
+        padding-left: 40px;
+        display: block;
+        background-color: #76ae36;
+        &::placeholder{
+            font-size: 14px;
+            color: #FFF;
+        }
+    }
+}
+.label-name::before,
+.label-password::before{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 15px;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+.label-name::before{
+background-image: url("../img/userprofile.svg");
+}
+.label-password::before{
+    background-image: url("../img/lockclosed.svg");   
+}
+button{
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    width: 140px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    border: none;
+    @include f700;
+    margin-right: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174,54, 0.75);
+    margin-bottom: 25px;
+}
+.create_acc{
+    margin-top: 19px;
+    padding: 13px 0 15px 30px;
+    text-align: center;
+    width: 245px;
+    font-size: 18px;
+    background-color: #76ae36;
+    color: #FFF;
+    border: none;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../img/Edit.svg");
+        width: 28px;
+        height: 22px;
+        top: 13px;
+        left: 33px;
+        z-index: 10;
+    }
+}
+.lost_password{
+    display: block;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 30px;
+}
+.fancybox-button svg path {
+    fill: #FFF;
+}
+//end modal
 
 //start search
 .search{
