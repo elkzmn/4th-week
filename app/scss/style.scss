@@ -418,19 +418,22 @@ background-image: url("../img/userprofile.svg");
 .label-password::before{
     background-image: url("../img/lockclosed.svg");   
 }
-button{
-    margin-top: 19px;
-    padding: 18px 0 16px;
-    width: 140px;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 14px;
-    border: none;
-    @include f700;
-    margin-right: 10px;
-    box-shadow: 0px 2px 2px 0px rgba(118, 174,54, 0.75);
-    margin-bottom: 25px;
+.modal__form{
+    button{
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        width: 140px;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+        border: none;
+        @include f700;
+        margin-right: 10px;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174,54, 0.75);
+        margin-bottom: 25px;
+    }
 }
+
 .create_acc{
     margin-top: 19px;
     padding: 13px 0 15px 30px;
@@ -472,6 +475,18 @@ button{
     background-size: cover;
     background-position: center center;
     min-height: 533px;
+    &.new-item__search{
+        min-height: 230px;
+        .search__inner{
+        padding: 60px 0 68px;
+        .search__inner-title{
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            @include f500;
+        }
+    }
+    }
 }
 .search__inner{
     padding: 155px 0 100px;
@@ -517,10 +532,11 @@ button{
             width: 22px;
             height: 25px;
             object-fit: cover;
-            }
         }
     }
 }
+}
+
 //end search
 
 //start products
@@ -927,3 +943,117 @@ button{
         font-size: 15px;
     }
 }
+
+
+//start product-page
+.product-page__inner{
+    display: flex;
+}
+.product-page__aside{
+    margin-right: 30px;
+}
+.aside-item{
+    background-color: #FFF;
+    border: 1px solid #dedede;
+    padding: 0 32px 32px;
+    margin-bottom: 30px;
+    width: 270px;
+}
+.aside__title{
+    border-bottom: 1px solid #dde3e8;
+    color: $bg;
+    font-size: 20px;
+    padding: 23px 0 18px;
+    @include f700;
+}
+.category__list{
+    padding-top: 10px;
+    li{
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-between;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../img/arrow.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 15px;
+            top: 13px;
+            left: 0;
+        }
+        span{
+            color: #90a4ae;
+        }
+        a{
+            color: $bg;
+        }
+    }
+}
+.price-range{
+    form{
+        padding: 20px 0 25px;
+    }
+    button{
+        margin-top: 55px;
+        background-color: $green;
+        color: #FFF;
+        @include f500;
+        padding: 16px 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../img/search.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: calc(50% - 8px);
+            left: 55px;
+            width: 14px;
+            height: 14px
+        }
+    }
+}
+.irs-min,.irs-max{
+    display: none;
+}
+.irs--flat .irs-bar {
+background-color: $bg;
+height: 5px;
+}
+.irs--flat .irs-line{
+    background-color: #f2f5f8;
+    height: 5px;
+}
+.irs--flat .irs-handle {
+width: 16px;
+height: 16px;
+top: 19px;
+border: 4px solid $green;
+border-radius: 50%;
+background-color: #FFF;
+}
+.irs--flat .irs-handle>i:first-child{
+    display: none;
+}
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+    top: 45px;
+    color: #78909c;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0px 0px;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before{
+    display: none;
+}
+//end product-page
