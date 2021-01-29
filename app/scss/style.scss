@@ -1223,3 +1223,73 @@ background-color: #FFF;
     }
 }
 //end product-page
+.page-404{
+    background-color: $grey;
+}
+.page-404__wrapper{
+border: 1px solid #dedede;
+background-color: #FFF;
+margin-bottom: 150px;
+}
+.page-404__head{
+    font-size: 24px;
+    color: #444;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dedede;
+}
+.page-404__inner{
+    background-color: $green;
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 100px;
+}
+.page-404__404{
+    font-size: 300px;
+    line-height: 300px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    padding-top: 70px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url('../img/men404.png');
+        width: 150px;
+        height: 295px;
+        top: 60px;
+        margin-left: 20px;
+    }
+
+}
+.page-404__title{
+margin-bottom: 35px;
+margin-top: 20px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 30px;
+}
+.page-404__text{
+font-size: 18px;
+max-width: 509px;
+margin: 0 auto;
+margin-bottom: 60px;
+}
+.page-404__link{
+    a{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    color: #FFF;
+    @include f500;
+}
+}
+//start 404-page
+
+
+
+
+//end 404-page
