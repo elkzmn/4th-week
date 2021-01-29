@@ -26,9 +26,6 @@ li{
   padding: 0;
   list-style: none;  
 }
-.page-contant{
-    background-color: $grey;
-}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -68,6 +65,7 @@ li{
 
 .breadcrumbs{
     padding: 50px 0 40px;
+    background-color: $grey;
     .breadcrumbs__list{
         li{
             display: inline-block;

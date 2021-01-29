@@ -621,7 +621,7 @@ background-image: url("../img/userprofile.svg");
     &-user{
         font-size: 14px;
         span{
-           width: 30px;
+           min-width: 30px;
            height: 30px;
            border-radius: 50%;
            background-position: center center;
@@ -946,8 +946,12 @@ background-image: url("../img/userprofile.svg");
 
 
 //start product-page
+.product-page{
+background-color: $grey;
+}
 .product-page__inner{
     display: flex;
+    padding-bottom: 110px;
 }
 .product-page__aside{
     margin-right: 30px;
@@ -1055,5 +1059,167 @@ background-color: #FFF;
 }
 .irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before{
     display: none;
+}
+.top-sellers{
+    .aside__title{
+        margin-bottom: 30px;
+    }
+    .product__item-img{
+        min-height: 120px;
+    }
+    .product__item{
+        box-shadow: none;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dde3e8;
+    }
+    .product__item-content{
+        padding: 0;
+        min-height: 75px;
+        border-bottom: none;
+    }
+    .product__item-info{
+        padding: 0;
+        min-height: 0;
+    }
+    .product__item-title{
+        font-size: 16px;
+    }
+    .product__item-price{
+        font-size: 16px;
+    }
+    .product__item-user span{
+        margin-right: 9px;   
+    }
+    .product__item:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+.aside__product-item{
+    .product__item:last-child{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+.top-sellers__link{
+    padding: 16px 10px;
+    background-color: $green;
+    color: #FFF;
+    width: 100%;
+    display: block;
+    @include f500;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+.product-page__content{
+    width: 100%;
+    .product-page__filter{
+        padding: 0 20px;
+        margin-bottom: 30px;
+        background-color: #FFF;
+        border: 1px solid #dedede;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.product-page__filter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        width: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        .sort{
+                object-fit: cover;
+                width: 18px;
+        }
+        .sort-2{
+            object-fit: cover;
+            height: 25px;
+            width: 30px;
+        }
+        &:first-child{
+            margin-right: 10px;
+        }    
+    }
+
+}
+.product-page__filter-start{
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    button{
+        width: 18px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding:0;
+        margin-right: 10px;
+        img{
+            object-fit: cover;
+        }
+    }
+}
+.product-page__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.product-page__content{
+    .product__item{
+        max-width: 270px;
+        background-color: #FFF;
+    }
+    .product__item-img{
+        min-height: 180px;
+    }
+    .product__item-content{
+        padding: 10px 20px;
+    }
+    .product__item-title{
+        font-size: 16px;
+    }
+    .product__item-info{
+        min-height: 65px;
+        padding: 10px 20px;
+    }
+}
+.pagination{
+    li{
+        display: inline-block;
+        &+li{
+            margin-left: 6px;
+        }
+        a,span{
+            box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+            width: 43px;
+            height: 38px;
+            background-color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include f500;
+            font-size: 16px;
+            color: $bg;
+            cursor: pointer;
+            &.active{
+                background-color: $red;
+                color: #FFF;
+                box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+            }
+        }
+    }
 }
 //end product-page
