@@ -1223,15 +1223,16 @@ background-color: #FFF;
     }
 }
 //end product-page
-.page-404{
+//start 404-page
+.page-404, .about-page{
     background-color: $grey;
 }
-.page-404__wrapper{
+.page-404__wrapper,.about__wrapper{
 border: 1px solid #dedede;
 background-color: #FFF;
 margin-bottom: 150px;
 }
-.page-404__head{
+.page-404__head, .about__head{
     font-size: 24px;
     color: #444;
     padding: 23px 27px;
@@ -1287,9 +1288,23 @@ margin-bottom: 60px;
     @include f500;
 }
 }
-//start 404-page
-
-
-
-
 //end 404-page
+
+//start About US-page
+.about__inner{
+    padding: 0px 50px;
+}
+.about__box{
+    h3{
+        font-size: 20px;
+        @include f700; 
+        color: #444;
+        margin: 0;
+        margin: 40px 0 15px;
+    }
+    p{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+//end About Us page
