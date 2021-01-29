@@ -1224,15 +1224,15 @@ background-color: #FFF;
 }
 //end product-page
 //start 404-page
-.page-404, .about-page{
+.page-404, .about-page, .contact-page{
     background-color: $grey;
 }
-.page-404__wrapper,.about__wrapper{
+.page-404__wrapper,.about__wrapper, .contact__wrapper{
 border: 1px solid #dedede;
 background-color: #FFF;
 margin-bottom: 150px;
 }
-.page-404__head, .about__head{
+.page-404__head, .about__head, .contact__head{
     font-size: 24px;
     color: #444;
     padding: 23px 27px;
@@ -1308,3 +1308,118 @@ margin-bottom: 60px;
     }
 }
 //end About Us page
+
+// Start Contact
+.contact__head{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.contact__inner{
+    padding: 35px 40px 15px;
+}
+.contact__map{
+    margin-bottom: 50px;
+    iframe{
+        height: 415px;
+        width: 100%;
+    }
+}
+.contact__content{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__info{
+    margin-right: 30px;
+    max-width: 330px;
+}
+.contact__info-item{
+    margin-bottom: 30px;
+}
+.contact__info-title{
+    padding-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 44px;
+        height: 4px;
+        background-color: $green;
+        left: 38px;
+        bottom: 0;
+    }
+}
+.icon-map::before, .icon-phone::before, .icon-mail::before{
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 3px;
+    height: 17px;
+    width: 16px;
+}
+.icon-map::before{
+background-image: url('../img/location_icon.svg');
+}
+.icon-phone::before, .icon-mail::before{
+background-image: url('../img/phone-call.svg');
+}
+.contact__info-text{
+    padding-left: 40px;
+    color: #707070;
+    max-width: 250px;
+}
+.contact__form-title{
+    font-size: 24px;
+    margin-bottom: 16px;
+    @include f500;
+    color: #333;
+}
+.contact__form-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__form{
+    width: 725px;
+    input{
+    border: none;
+    width: 350px;
+    margin-bottom: 30px;
+    height: 43px;
+    padding: 0 17px;
+    font-size: 15px;
+    background-color: #f1f4f5;
+    &::placeholder{
+        color: #7a7a7a;
+        font-size: 15px;
+    }
+    }
+    textarea{
+        border: none;
+        width: 100%;
+        margin-bottom: 30px;
+        height: 195px;
+        padding: 15px 17px;
+        font-size: 15px;
+        background-color: #f1f4f5;
+        display: block;
+        resize: none;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+    }
+}
+    button{
+        border: none;
+        padding: 20px 35px;
+        background-color: $green;
+        color: #FFF;
+        @include f700;
+        text-transform: uppercase;
+    }
+
+}
+//End Contact
