@@ -14,7 +14,8 @@ $(".js-range-slider").ionRangeSlider({
 });
 
 $(".tab_item").not(":first").hide();
-$(".product-one__content-tabs .tab").click(function() {
-	$(".product-one__content-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+$(".product-one__content-tabs .tab, .settings-tabs .tab").click(function() {
+	$(".product-one__content-tabs .tab, .settings-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
+

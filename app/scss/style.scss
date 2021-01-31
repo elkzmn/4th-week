@@ -864,7 +864,7 @@ background-image: url("../img/userprofile.svg");
     top: 2px;
     left: 0;
 }
-.footer__menu-item, .tab__menu-item{
+.footer__menu-item, .tab__menu-item, .settings-tabs span{
     padding-left: 25px;
     position: relative;
     &::before{
@@ -1705,3 +1705,151 @@ color: $bg;
     }
 }
 //End Product one-page
+
+
+//start settings
+.settings{
+    background-color: $grey;
+}
+.settings-tabs{
+    display: flex;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        display: block;
+        height: 100%;
+        span{
+            background-color: #FFF;
+            border-bottom: 1px solid #dedede; 
+            padding: 17px 50px;  
+            text-align: left;  
+            display: block;   
+            color: #707070;
+            @include f500;
+            font-size: 14px;
+            &.active{
+                border: 2px solid $green;
+                color: #37474f;
+            }   
+        }
+    }
+    .tab_content{
+        width: 100%;
+        border: 1px solid #dedede;
+        background-color: #FFF;
+        padding: 0;
+
+    }
+}
+ .settings-tabs .tab::before {
+     top: 20px;
+     left: 25px;
+ }
+ 
+ .page-box__title{
+    border-bottom: 1px solid #dedede;
+    padding: 18px 34px;
+    font-size: 24px;
+    color: $bg;
+    @include f700;
+ }
+ .page-box__content{
+     padding: 30px 35px 80px;
+ }
+ .settings__line{
+     margin-bottom: 21px;
+     display: flex;
+     label{
+        color: #444;
+        width: 260px;
+     }
+     input, select{
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        color: black;
+        border: 1px solid #dedede;
+        background-color: #f9f9f9;
+        padding: 0 10px;
+     }
+     select{
+         color: #707070;
+     }
+ }
+ .page-box__content{
+     button{
+         margin-top: 25px;
+         margin-left: 260px;
+         padding: 15px 31px;
+         @include f500;
+         background-color: $green;
+         border: none;
+         color: #fff;
+     }
+ }
+//end settings
+
+//start upload
+.upload{
+    background-color: $grey;
+}
+.upload__inner{
+background-color: #FFF;
+border: 1px solid #dedede;
+margin-bottom: 105px;
+    button{
+        background-color: $green;
+        border: none;
+        color: #FFF;
+        padding: 15px 36px;
+        @include f700;
+        margin-left: 220px;
+        margin-bottom: 65px;
+    }
+}
+.upload__inner-title{
+    border-bottom: 1px solid #dedede;
+    color: $bg;
+    font-size: 24px;
+    padding: 22px 34px;
+}
+.upload__inner-content{
+    padding: 40px 50px 40px 45px;
+}
+.upload-line{
+    display: flex;
+    margin-bottom: 22px;
+    text-align: left;
+    label{
+        min-width: 175px;
+        padding-top: 5px;
+        color: #444;
+        padding-right: 5px;
+        @include f500;
+        span{
+            color: $green;
+        }
+    }
+    input, select, textarea{
+        padding: 10px 18px;
+        background-color: #f9f9f9;
+        color: #707070;
+        height: 40px;
+        display: block;
+        width: 100%;
+        border: 1px solid #dedede;
+    }
+    textarea{
+        height: 150px;
+    }
+    &::placeholder{
+        color: #707070;
+    }
+}
+
+
+//end upload
+
