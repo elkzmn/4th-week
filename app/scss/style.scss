@@ -1749,12 +1749,13 @@ color: $bg;
      left: 25px;
  }
  
- .page-box__title{
+ .page-box__title, .withdrawals__title{
     border-bottom: 1px solid #dedede;
     padding: 18px 34px;
     font-size: 24px;
     color: $bg;
     @include f700;
+    
  }
  .page-box__content{
      padding: 30px 35px 80px;
@@ -1853,3 +1854,98 @@ margin-bottom: 105px;
 
 //end upload
 
+//start withdrawals
+.withdrawals{
+    background-color: $grey;
+}
+.withdrawals__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.withdrawals__col{
+    max-width: 572px;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #dedede;
+    margin-bottom: 150px;
+    height: 100%;
+}
+.withdrawals__col-box{
+    padding: 30px 40px;
+    form{
+        button{
+            color: #FFF;
+            @include f700;
+            font-size: 16px;
+            background-color: $green;
+            padding: 18px 40px 18px 28px;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.withdrawals__col-content{
+    margin-bottom: 30px;
+    input, select{
+        padding: 15px 18px;
+        background-color: #f9f9f9;
+        color: #000;
+        height: 40px;
+        display: block;
+        width: 100%;
+        border: 1px solid #dedede;
+        &::placeholder{
+            color: #707070;
+            font-size: 15px;
+        }
+    }
+    select{
+        color: #707070;
+        padding: 8px 18px;
+    }
+}
+.withdrawals__col-content-title{
+    margin-bottom: 25px;
+    color: $bg;
+    font-size: 16px;
+    @include f500;
+    span{
+        color: $green;
+    }
+}
+.withdrawals__col-items{
+    padding-bottom: 35px;
+}
+.withdrawals__col-item{
+    height: 43px;
+    display: flex;
+    height: 42px;
+    align-items: center;
+    color: #444;
+    font-size: 13px;
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+}
+.withdrawals__col-item-date{
+    width: 154px;
+    padding-left: 20px;
+    @include f500;
+}
+.withdrawals__col-item-name{
+    width: 180px;
+    @include f500;
+}
+.withdrawals__col-item-price{
+    width:70px;
+    @include f700;
+}
+.withdrawals__col-item-status{
+    width: 88px;
+    @include f700;
+    &.paid{
+        color: $green;
+    }
+}
+//end withdrawals
